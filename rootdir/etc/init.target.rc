@@ -29,7 +29,6 @@
 
 on early-init
     write /proc/sys/kernel/sched_boost 1
-    symlink /data/tombstones /tombstones
 
     # Start audio adsp rpc daemon at early init stage
     start vendor.audioadsprpcd_audiopd
@@ -63,11 +62,6 @@ on late-fs
     mount_all /vendor/etc/fstab.qcom --late
 
 on post-fs-data
-    mkdir /data/tombstones 0771 system system
-    mkdir /tombstones/modem 0771 system system
-    mkdir /tombstones/lpass 0771 system system
-    mkdir /tombstones/wcnss 0771 system system
-    mkdir /tombstones/dsps 0771 system system
     mkdir /data/vendor/nnhal 0700 system system
 
 # For cpusets initialize for Silver Only first and then Silver + Gold
