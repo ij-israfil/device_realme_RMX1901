@@ -116,6 +116,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.postproc@1.0.vendor \
     libgui_vendor
 
+# Configstore
+PRODUCT_PACKAGES += \
+    disable_configstore
+    
 # Charger
 PRODUCT_PACKAGES += \
     libsuspend
