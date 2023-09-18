@@ -18,7 +18,7 @@
 package org.device.RealmeParts;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
-import com.android.settingslib.widget.R;
+import com.android.settingslib.collapsingtoolbar.R;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
