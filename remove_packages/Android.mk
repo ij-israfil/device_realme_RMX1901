@@ -32,6 +32,7 @@ LOCAL_OVERRIDES_PACKAGES := \
 		NfcNci \
 		ViMusic \
 		AndroidAutoStubPrebuilt \
+		arcore \
 		Papers
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
