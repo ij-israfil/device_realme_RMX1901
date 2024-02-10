@@ -310,11 +310,11 @@
     <ctl name="EAR PA Gain" value="POS_1P5_DB" />
     <ctl name="EAR PA Boost" value="DISABLE" />
 
-    <ctl name="RX1 Digital Volume" value="90" />
-    <ctl name="RX2 Digital Volume" value="90" />
-    <ctl name="RX3 Digital Volume" value="90" />
-    <ctl name="RX4 Digital Volume" value="90" />
-    <ctl name="RX5 Digital Volume" value="90" />
+    <ctl name="RX1 Digital Volume" value="84" />
+    <ctl name="RX2 Digital Volume" value="84" />
+    <ctl name="RX3 Digital Volume" value="84" />
+    <ctl name="RX4 Digital Volume" value="84" />
+    <ctl name="RX5 Digital Volume" value="84" />
     <!--
     #ifndef VENDOR_EDIT
     //Jianfeng.Qiu@PSW.MM.AudioDriver.HAL, 2016/02/27, Modify for avoid initial value not correct
@@ -327,10 +327,10 @@
     <ctl name="ADC2 Volume" value="5" />
     <ctl name="ADC3 Volume" value="5" />
     <!--#endif /* VENDOR_EDIT */ -->
-    <ctl name="DEC1 Volume" value="90" />
-    <ctl name="DEC2 Volume" value="90" />
-    <ctl name="DEC3 Volume" value="90" />
-    <ctl name="DEC4 Volume" value="90" />
+    <ctl name="DEC1 Volume" value="84" />
+    <ctl name="DEC2 Volume" value="84" />
+    <ctl name="DEC3 Volume" value="84" />
+    <ctl name="DEC4 Volume" value="84" />
 
     <!-- Compander controls -->
     <ctl name="COMP1 Switch" value="1" />
@@ -520,8 +520,6 @@
         <ctl name="ADC2 MUX" value="INP3" />
         <ctl name="ADC1 Volume" value="6" />
         <ctl name="ADC3 Volume" value="6" />
-        <ctl name="DEC1 Volume" value="80" />
-        <ctl name="DEC2 Volume" value="80" />
         <ctl name="INT3_MI2S_TX Channels" value="Two" />
     </path>
     <!--Jianfeng.Qiu@PSW.MM.AudioDriver.HAL, 2017/02/22, Add for audio test end-->
@@ -667,11 +665,6 @@
 
     <path name="deep-buffer-playback speaker">
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia1" value="1" />
-        <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia1" value="1" />
-        <ctl name="RX1 MIX1 INP1" value="RX1" />
-        <ctl name="RDAC2 MUX" value="RX1" />
-        <ctl name="RX1 Digital Volume" value="90" />
-        <ctl name="EAR_S" value="Switch" />
     </path>
 
     <path name="deep-buffer-playback dummy">
