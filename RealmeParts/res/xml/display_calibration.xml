@@ -15,7 +15,7 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <SwitchPreference
+    <SwitchPreferenceCompat
         android:key="kcal_enabled"
         android:title="@string/kcal_enabled_title"
         android:summary="@string/kcal_enabled_summary"
@@ -101,7 +101,7 @@
         app:min_value="0"
         app:default_value="0"/>
 
-     <SwitchPreference
+     <SwitchPreferenceCompat
         android:key="kcal_greyscale"
         android:title="@string/kcal_greyscale_title"
         android:summary="@string/kcal_greyscale_summary"

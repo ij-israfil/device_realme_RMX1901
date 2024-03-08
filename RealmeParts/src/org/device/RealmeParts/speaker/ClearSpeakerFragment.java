@@ -27,7 +27,8 @@ import android.util.Log;
 
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragment;
-import androidx.preference.SwitchPreference;
+import androidx.preference.SwitchPreferenceCompat;
+import androidx.preference.TwoStatePreference;
 
 import org.device.RealmeParts.R;
 
@@ -42,7 +43,7 @@ public class ClearSpeakerFragment extends PreferenceFragment implements
 
     private Handler mHandler = new Handler(Looper.getMainLooper());
     private MediaPlayer mMediaPlayer;
-    private SwitchPreference mClearSpeakerPref;
+    private TwoStatePreference mClearSpeakerPref;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {

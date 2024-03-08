@@ -17,7 +17,8 @@
 package org.device.RealmeParts.preferences;
 
 import android.content.Context;
-import androidx.preference.SwitchPreference;
+import androidx.preference.SwitchPreferenceCompat;
+import androidx.preference.TwoStatePreference;
 import android.provider.Settings;
 import android.util.AttributeSet;
 

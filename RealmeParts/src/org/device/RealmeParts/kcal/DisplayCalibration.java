@@ -26,7 +26,8 @@ import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
-import android.preference.SwitchPreference;
+import android.preference.SwitchPreferenceCompat;
+import androidx.preference.TwoStatePreference;
 import android.app.ActionBar;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -59,10 +60,10 @@ public class DisplayCalibration extends PreferenceActivity implements
     private SeekBarPreference mKcalContrast;
     private SeekBarPreference mKcalColorTemp;
     private SharedPreferences mPrefs;
-    private SwitchPreference mKcalEnabled;
+    private TwoStatePreference mKcalEnabled;
     private SeekBarPreference mKcalHue;
     private SeekBarPreference mKcalValue;
-    private SwitchPreference mKcalGreyscale;
+    private TwoStatePreference mKcalGreyscale;
     private ListPreference mKcalPresetsListPreference;
     private boolean mEnabled;
 
@@ -89,7 +90,7 @@ public class DisplayCalibration extends PreferenceActivity implements
 
         addPreferencesFromResource(R.xml.display_calibration);
 
-        mKcalEnabled = (SwitchPreference) findPreference(KEY_KCAL_ENABLED);
+        mKcalEnabled = (TwoStatePreference) findPreference(KEY_KCAL_ENABLED);
         mKcalEnabled.setChecked(mPrefs.getBoolean(DisplayCalibration.KEY_KCAL_ENABLED, false));
         mKcalEnabled.setOnPreferenceChangeListener(this);
 
@@ -125,7 +126,7 @@ public class DisplayCalibration extends PreferenceActivity implements
         mKcalValue.setInitValue(mPrefs.getInt(KEY_KCAL_VALUE, mKcalValue.def));
         mKcalValue.setOnPreferenceChangeListener(this);
 
-        mKcalGreyscale = (SwitchPreference) findPreference(KEY_KCAL_GREYSCALE);
+        mKcalGreyscale = (TwoStatePreference) findPreference(KEY_KCAL_GREYSCALE);
         mKcalGreyscale.setChecked(mPrefs.getBoolean(KEY_KCAL_GREYSCALE, false));
         mKcalGreyscale.setOnPreferenceChangeListener(this);
 

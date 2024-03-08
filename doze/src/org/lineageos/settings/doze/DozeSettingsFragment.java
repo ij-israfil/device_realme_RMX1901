@@ -36,7 +36,8 @@ import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceFragment;
-import androidx.preference.SwitchPreference;
+import androidx.preference.SwitchPreferenceCompat;
+import androidx.preference.TwoStatePreference;
 
 import org.lineageos.settings.R;
 
@@ -45,12 +46,12 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
 
     private MainSwitchPreference mSwitchBar;
 
-    private SwitchPreference mAlwaysOnDisplayPreference;
+    private TwoStatePreference mAlwaysOnDisplayPreference;
 
-    private SwitchPreference mPickUpPreference;
-    private SwitchPreference mPocketPreference;
-    private SwitchPreference mSmartWakePreference;
-    private SwitchPreference mMotionPreference;
+    private TwoStatePreference mPickUpPreference;
+    private TwoStatePreference mPocketPreference;
+    private TwoStatePreference mSmartWakePreference;
+    private TwoStatePreference mMotionPreference;
 
     private Handler mHandler = new Handler();
 
@@ -70,7 +71,7 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
         mSwitchBar.addOnSwitchChangeListener(this);
         mSwitchBar.setChecked(dozeEnabled);
 
-        mAlwaysOnDisplayPreference = (SwitchPreference) findPreference(DozeUtils.ALWAYS_ON_DISPLAY);
+        mAlwaysOnDisplayPreference = (TwoStatePreference) findPreference(DozeUtils.ALWAYS_ON_DISPLAY);
         mAlwaysOnDisplayPreference.setEnabled(dozeEnabled);
         mAlwaysOnDisplayPreference.setChecked(DozeUtils.isAlwaysOnEnabled(getActivity()));
         mAlwaysOnDisplayPreference.setOnPreferenceChangeListener(this);
@@ -81,19 +82,19 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
                 findPreference(DozeUtils.CATEG_PROX_SENSOR);
         PreferenceCategory motionSensorCategory = (PreferenceCategory) getPreferenceScreen().
                 findPreference(DozeUtils.CATEG_MOTION_SENSOR);
-        mPickUpPreference = (SwitchPreference) findPreference(DozeUtils.GESTURE_PICK_UP_KEY);
+        mPickUpPreference = (TwoStatePreference) findPreference(DozeUtils.GESTURE_PICK_UP_KEY);
         mPickUpPreference.setEnabled(dozeEnabled);
         mPickUpPreference.setOnPreferenceChangeListener(this);
 
-        mPocketPreference = (SwitchPreference) findPreference(DozeUtils.GESTURE_POCKET_KEY);
+        mPocketPreference = (TwoStatePreference) findPreference(DozeUtils.GESTURE_POCKET_KEY);
         mPocketPreference.setEnabled(dozeEnabled);
         mPocketPreference.setOnPreferenceChangeListener(this);
 
-        mSmartWakePreference = (SwitchPreference) findPreference(DozeUtils.GESTURE_SMART_WAKE_KEY);
+        mSmartWakePreference = (TwoStatePreference) findPreference(DozeUtils.GESTURE_SMART_WAKE_KEY);
         mSmartWakePreference.setEnabled(dozeEnabled);
         mSmartWakePreference.setOnPreferenceChangeListener(this);
 
-        mMotionPreference = (SwitchPreference) findPreference(DozeUtils.GESTURE_MOTION_KEY);
+        mMotionPreference = (TwoStatePreference) findPreference(DozeUtils.GESTURE_MOTION_KEY);
         mMotionPreference.setEnabled(dozeEnabled);
         mMotionPreference.setOnPreferenceChangeListener(this);
 
