@@ -511,7 +511,7 @@ odm/firmware/fastchg/18041/oplus_vooc_fw.bin
 odm/firmware/fastchg/18041/oplus_vooc_fw_n76e.bin
 
 # CNE
-vendor/app/CneApp/CneApp.apk
+vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_symlink
 vendor/bin/cnd
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml
