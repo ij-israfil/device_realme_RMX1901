@@ -121,8 +121,8 @@ Only the three quirks included above are recognized at this point:
 -->
 
 <MediaCodecs>
-    <Include href="media_codecs_google_audio.xml" />
-    <Include href="media_codecs_google_telephony.xml" />
+    <Include href="media_codecs_google_c2_audio.xml" />
+    <Include href="media_codecs_google_c2_telephony.xml" />
     <Settings>
         <Setting name="max-video-encoder-input-buffers" value="11" />
     </Settings>
@@ -367,8 +367,8 @@ Only the three quirks included above are recognized at this point:
                 <Limit name="concurrent-instances" max="16" />
                 <Limit name="performance-point-1920x1088" value="30" />
         </MediaCodec>
-        <MediaCodec name="OMX.google.opus.decoder" type="audio/opus" update="true" rank="100"/>
+        <MediaCodec name="c2.android.opus.decoder" type="audio/opus" update="true" rank="100"/>
         <MediaCodec name="OMX.google.raw.decoder" type="audio/raw" update="true" rank="1"/>
     </Decoders>
-    <Include href="media_codecs_google_video.xml" />
+    <Include href="media_codecs_google_c2_video.xml" />
 </MediaCodecs>
