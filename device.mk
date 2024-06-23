@@ -516,6 +516,11 @@ PRODUCT_PACKAGES += \
     libwfdaac_vendor \
     vendor.qti.hardware.display.config-V5-ndk
 
+# WiFi firmware symlinks
+PRODUCT_PACKAGES += \
+    firmware_wlan_mac.bin_symlink \
+    firmware_WCNSS_qcom_cfg.ini_symlink
+
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
