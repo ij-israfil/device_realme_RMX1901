@@ -278,4 +278,20 @@
         <instance>default</instance>
     </interface>
 </hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.radio.config</name>
+    <version>1.0-2</version>
+    <interface>
+        <name>IRadioConfig</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.qti.hardware.display.mapper</name>
+    <version>1.0-1</version>
+    <interface>
+        <name>IQtiMapper</name>
+        <instance>default</instance>
+    </interface>
+</hal>
 </compatibility-matrix>
