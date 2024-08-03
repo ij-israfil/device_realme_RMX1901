@@ -640,8 +640,8 @@ function oppo_configure_zram_parameters() {
     MemTotal=${MemTotalStr:16:8}
 
     echo lz4 > /sys/block/zram0/comp_algorithm
-    echo 100 > /proc/sys/vm/swappiness
-    echo 50 > /proc/sys/vm/direct_swappiness
+    echo 160 > /proc/sys/vm/swappiness
+    echo 60 > /proc/sys/vm/direct_swappiness
     echo 0 > /proc/sys/vm/page-cluster
 
     if [ -f /sys/block/zram0/disksize ]; then
