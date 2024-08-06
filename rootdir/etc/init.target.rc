@@ -27,10 +27,6 @@
 #
 #
 
-
-    # Start audio adsp rpc daemon at early init stage
-    start vendor.audioadsprpcd_audiopd
-
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
