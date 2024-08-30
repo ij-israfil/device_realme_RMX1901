@@ -204,7 +204,6 @@ debug.sf.early_gl_app_phase_offset_ns=15000000
 persist.sys.binary_xml=false
 
 # USB
-ro.usb.uvc.enabled=true
 sys.usb.mtp.batchcancel=1
 vendor.usb.product_string=realme X
 vendor.usb.controller=a600000.dwc3

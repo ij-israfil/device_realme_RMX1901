@@ -116,6 +116,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     disable_configstore
     
+TARGET_BUILD_DEVICE_AS_WEBCAM := true
+
 # Charger
 PRODUCT_PACKAGES += \
     libsuspend
