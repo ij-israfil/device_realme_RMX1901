@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-     SPDX-FileCopyrightText: 2022 The LineageOS Project
-     SPDX-License-Identifier: Apache-2.0
--->
-<resources>
-    <string name="menu_changelog_url" translatable="false">https://github.com/israfilbd/android_vendor_MatrixxOTA/blob/14.0/changelogs/RMX1901.md</string>
-    
-</resources>

@@ -4,23 +4,16 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common Project Matrixx stuff
+# Inherit some common Afterlife OS stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_HAS_UDFPS := true
-EXTRA_UDFPS_ANIMATIONS := true
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
+$(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 
-# Matrixx
-MATRIXX_MAINTAINER := м∂_ιѕяαƒιℓ
-MATRIXX_CHIPSET := SDM710
-MATRIXX_BATTERY := 3765mah
-MATRIXX_DISPLAY := 1080x2340
-
-# Gapps
-WITH_GMS := true
-BUILD_GOOGLE_CONTACTS := true
-BUILD_GOOGLE_DIALER := true
-BUILD_GOOGLE_MESSAGE := true
+ # Maintainer Flag
+ AFTERLIFE_MAINTAINER := м∂_ιѕяαƒιℓ
+ AFTERLIFE_GAPPS := true
+ GAPPS_CORE := true
 
 # Inherit from RMX1901 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -34,7 +27,7 @@ PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/lineage-priv/keys/.android-certs/relea
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1901
 PRODUCT_MANUFACTURER := realme
-PRODUCT_NAME := lineage_RMX1901
+PRODUCT_NAME := afterlife_RMX1901
 PRODUCT_MODEL := RMX1901
 
 PRODUCT_SYSTEM_NAME := RMX1901

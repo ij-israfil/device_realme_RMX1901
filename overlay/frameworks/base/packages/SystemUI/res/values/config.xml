@@ -67,7 +67,4 @@
     <!-- Update battery info every second when device is charging -->
     <bool name="config_alternateFastchargeInfoUpdate">true</bool>
 
-     <!-- Whether to disable Smart Pixels on UDFPS -->
-    <bool name="config_disableSmartPixelsOnUDFPS">true</bool>
-
 </resources>
