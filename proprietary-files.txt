@@ -261,7 +261,6 @@ vendor/lib/libstblur_capture_api.so
 vendor/lib/libstface_fd_api.so
 vendor/lib/libstface_seg_ocl.so
 vendor/lib/libswregistrationalgo.so
-vendor/lib/libswvdec.so
 vendor/lib/libsymphony-cpu.so
 vendor/lib/libsymphonypower.so
 vendor/lib/libthread_blur.so
@@ -338,7 +337,6 @@ vendor/lib64/libsns_fastRPC_util.so
 vendor/lib64/libsns_low_lat_stream_stub.so
 vendor/lib64/libstface_fd_api.so
 vendor/lib64/libswregistrationalgo.so
-vendor/lib64/libswvdec.so
 vendor/lib64/libsymphony-cpu.so
 vendor/lib64/libsymphonypower.so
 vendor/lib64/libtriplecam_image_optical_zoom.so
