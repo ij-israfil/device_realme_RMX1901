@@ -5,8 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_RMX1901.mk
+    $(LOCAL_DIR)/pixelage_RMX1901.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_RMX1901-userdebug \
-	lineage_RMX1901-eng
+	pixelage_RMX1901-user \
+	pixelage_RMX1901-userdebug \
+	pixelage_RMX1901-eng
