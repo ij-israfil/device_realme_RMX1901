@@ -14,6 +14,5 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
      
 	 <!-- About device screen, build maintainer -->
-    <string name="maintainer_name">м∂ ιѕяαƒιℓ</string>
-    <string name="maintainer_telegram">https://t.me/IJ_israfil</string>
+    <string name="build_maintainer_summary">м∂_ιѕяαƒιℓ</string>
 </resources>
